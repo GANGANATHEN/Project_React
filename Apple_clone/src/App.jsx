@@ -5,11 +5,11 @@ import Highlights from './components/Highlights';
 const App = ()=>{
 
   return (
-    <>
-    <Navbar></Navbar>
-    <Hero></Hero>
-    <Highlights></Highlights>
-    </>
+    <main className='bg-black'>
+      <Navbar />
+      <Hero />
+      <Highlights />
+    </main>
   )
 }
 
