@@ -15,7 +15,17 @@ export const animateWithGsap = (target, animationProps, scrollProps) => {
   })
 }
 
-export const animateWithGsapTimeline = (timeline, rotationRef, rotationState, firstTarget, secondTarget, animationProps) => {
+export const animateWithGsapTimeline = (timeline, rotationRef, rotationState, firstTarget, secondTarget, animationProps,scrollProps,target) => {
+
+    gsap.to(target, {
+    ...animationProps,
+    scrollTrigger: {
+      trigger: target,
+      toggleActions: 'restart reverse restart reverse',
+      start: 'top 85%',
+      ...scrollProps,
+    }
+  })
     timeline.to(rotationRef.current.rotation, {
       y: rotationState,
       duration: 1,
