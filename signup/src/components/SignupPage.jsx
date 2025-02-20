@@ -30,7 +30,7 @@ const SignupPage = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <select value={role} onChange={(e) => setRole(e.target.value)}>
+      <select value={role} onChange={(e) => setRole(e.target.role)}>
         <option value="user">User</option>
         <option value="admin">Admin</option>
       </select>
