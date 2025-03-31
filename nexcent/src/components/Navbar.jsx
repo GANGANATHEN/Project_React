@@ -15,10 +15,11 @@ const Navbar = () => {
                     <li>Community</li>
                     <li>Blog</li>
                     <li className='text-primary'>Pricing</li>
-                    <a className=' font-semibold' href="#"><li>Register Now -{'>'}</li></a>
+                    <a className='btn font-semibold' href="#"><li>Register Now -{'>'}</li></a>
                 </ul>
             </div>
         </div>
+        
     </>
   )
 }
